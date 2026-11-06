@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://govwin.niptei.com/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://govwin.niptei.com/guides/sam-gov-registration.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://govwin.niptei.com/guides/find-first-government-contract.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://govwin.niptei.com/guides/capability-statement.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://govwin.niptei.com/guides/florida-vendor-registration.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+</urlset>
