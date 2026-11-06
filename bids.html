@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Government Bids &amp; RFPs — GovWin OS</title>
+<meta name="description" content="Open federal government bids and RFPs from SAM.gov, snapshot November 6, 2026: 45 contract opportunities with a response deadline on or after November 6, 2026, from 39 federal agencies and offices. Search by keyword, industry, and state.">
+<link rel="canonical" href="https://govwin.niptei.com/bids.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GovWin OS">
+<meta property="og:title" content="Open Government Bids &amp; RFPs — GovWin OS">
+<meta property="og:description" content="45 open federal contract opportunities from SAM.gov (snapshot November 6, 2026), searchable by keyword, industry, and state. State and local coverage lives inside GovWin OS.">
+<meta property="og:url" content="https://govwin.niptei.com/bids.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Open Government Bids &amp; RFPs — GovWin OS">
+<meta name="twitter:description" content="45 open federal bids from SAM.gov, snapshot November 6, 2026. Search by keyword, industry, and state.">
+<style>
+  :root{
+    --navy:#0f2a4a; --navy2:#16395f; --gold:#c9a227; --ink:#1c2733; --mut:#5a6a7a;
+    --bg:#f6f8fa; --card:#ffffff; --line:#dfe6ee; --ok:#0e7a3d;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:var(--navy2)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .brand{font-weight:800;font-size:20px;letter-spacing:.3px;color:#fff;text-decoration:none}
+  .brand span{color:var(--gold)}
+  nav a{color:#dbe6f2;text-decoration:none;margin-left:18px;font-size:15px}
+  nav a:hover{color:#fff}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:56px 0 48px}
+  .crumbs{font-size:14px;color:#b9cde2;margin:0 0 14px}
+  .crumbs a{color:#dbe6f2}
+  .eyebrow{color:var(--gold);font-weight:800;letter-spacing:1.6px;font-size:13px;margin:0 0 10px;text-transform:uppercase}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 14px}
+  .hero p.lede{font-size:18.5px;color:#d7e3f0;max-width:820px;margin:0 0 10px}
+  .hero p.lede strong{color:#fff}
+  .hero p.small{color:#b9cde2}
+  .btn{display:inline-block;background:var(--gold);color:#231a00;font-weight:700;padding:12px 22px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+  .btn:hover{filter:brightness(1.06)}
+  .btn.alt{background:var(--navy);color:#fff}
+  .btn.small{padding:9px 16px;font-size:15px}
+  section{padding:44px 0}
+  h2{font-size:26px;margin:0 0 8px;color:var(--navy)}
+  .sub{color:var(--mut);max-width:820px;margin:0 0 24px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .small{font-size:13.5px;color:var(--mut)}
+  .note{background:#eef4fb;border:1px solid #cfdff2;border-radius:10px;padding:16px 18px;color:#274b73}
+  .warnnote{background:#fdf6dd;border:1px solid #e8d98a;border-radius:10px;padding:14px 18px;color:#5c4a08}
+  .filters{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;grid-template-columns:2fr 1.4fr 1fr auto;gap:14px;align-items:end}
+  .filters label{display:block;font-size:12.5px;font-weight:800;letter-spacing:1px;color:var(--mut);text-transform:uppercase;margin-bottom:6px}
+  .filters input,.filters select,.quickform input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:16px;background:#fff;color:var(--ink)}
+  .bid{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin-bottom:14px}
+  .bid .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+  .bid .cat{color:#8a6d0d}
+  .bid .level{color:var(--navy2)}
+  .bid h3{margin:8px 0 6px;font-size:19px;color:var(--navy);line-height:1.35}
+  .bid p{margin:0 0 6px}
+  .bid .meta{color:var(--mut);font-size:14.5px}
+  .bid .meta strong{color:var(--ink)}
+  .tag{display:inline-block;background:#fdf3d0;color:#6d5410;font-size:12.5px;font-weight:700;padding:2px 9px;border-radius:99px}
+  .quickform{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end}
+  .quickform label{display:block;font-weight:700;color:var(--navy);margin-bottom:6px}
+  footer{background:var(--navy);color:#c9d8e8;padding:34px 0;font-size:14.5px}
+  footer a{color:#fff}
+  @media (max-width:820px){.filters,.quickform{grid-template-columns:1fr} .hero h1{font-size:31px} nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">GovWin <span>OS</span></a>
+    <nav>
+      <a href="index.html#platform">Platform</a>
+      <a href="index.html#plans">Plans</a>
+      <a href="bids.html">Open bids</a>
+      <a href="index.html#guides">Free guides</a>
+      <a href="register-free.html">Register free</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> &nbsp;›&nbsp; Government Bids</p>
+    <p class="eyebrow">Government bids &bull; Snapshot November 6, 2026</p>
+    <h1>Open Government Bids &amp; RFPs</h1>
+    <p class="lede"><strong>45 open</strong> federal government bids and RFPs from <strong>39 federal agencies and offices</strong>, in the snapshot dated November 6, 2026. <strong>31 arrived in the week before the snapshot</strong> (posted October 30 – November 5, 2026). Search by keyword, industry, and state, or browse below.</p>
+    <p class="small">&ldquo;Open&rdquo; on this board means one exact thing: a federal contract notice in GovWin&rsquo;s SAM.gov feed whose response deadline in the feed is on or after November 6, 2026. The feed held 90 contract notices in total — 27 had a deadline already past on the snapshot date and 18 listed no response deadline in the feed, so neither group is shown here. Always confirm the deadline in the official SAM.gov posting before you bid.</p>
+  </div>
+</div>
+
+<section id="board" style="padding-bottom:8px">
+  <div class="wrap">
+    <form class="filters" id="filters" onsubmit="return false">
+      <div>
+        <label for="q">Keyword</label>
+        <input id="q" type="search" placeholder="e.g. janitorial, custodial, landscaping" autocomplete="off">
+      </div>
+      <div>
+        <label for="industry">Industry</label>
+        <select id="industry">
+          <option value="">All industries</option>
+            <option value="561320">Temporary Help Services (NAICS 561320) — 7</option>
+            <option value="561720">Janitorial Services (NAICS 561720) — 30</option>
+            <option value="561730">Landscaping Services (NAICS 561730) — 8</option>
+        </select>
+      </div>
+      <div>
+        <label for="state">State</label>
+        <select id="state">
+          <option value="">All locations</option>
+            <option value="AK">AK — 1</option>
+            <option value="AL">AL — 1</option>
+            <option value="CA">CA — 2</option>
+            <option value="CO">CO — 2</option>
+            <option value="CO-DC">CO-DC — 1</option>
+            <option value="CT">CT — 1</option>
+            <option value="ES-MD">ES-MD — 2</option>
+            <option value="FL">FL — 1</option>
+            <option value="IN">IN — 1</option>
+            <option value="IT-PN">IT-PN — 1</option>
+            <option value="KY">KY — 1</option>
+            <option value="MN">MN — 1</option>
+            <option value="MO">MO — 1</option>
+            <option value="MS">MS — 1</option>
+            <option value="MT">MT — 1</option>
+            <option value="NJ">NJ — 1</option>
+            <option value="NM">NM — 2</option>
+            <option value="SD">SD — 2</option>
+            <option value="TX">TX — 1</option>
+            <option value="UT">UT — 1</option>
+            <option value="VA">VA — 3</option>
+            <option value="WV">WV — 1</option>
+            <option value="__none__">Location not stated in feed — 16</option>
+        </select>
+      </div>
+      <button class="btn" id="searchBtn" type="button">Search RFPs</button>
+    </form>
+    <p style="margin:16px 0 0">Popular bids by industry: <a href="#board" data-industry="561320" class="industry-link">Temporary Help Services (NAICS 561320) (7)</a> · <a href="#board" data-industry="561720" class="industry-link">Janitorial Services (NAICS 561720) (30)</a> · <a href="#board" data-industry="561730" class="industry-link">Landscaping Services (NAICS 561730) (8)</a></p>
+    <p class="note" style="margin-top:18px"><strong>Scope, stated plainly:</strong> this public board shows <strong>federal</strong> opportunities from SAM.gov only. Inside GovWin OS, the federal feed refreshes daily. <strong>State and local coverage lives inside GovWin OS too</strong> — as step-by-step playbooks and tracked buying portals for all 50 states, DC, and the U.S. territories, not as a live feed on this page. This board is a dated snapshot (see the date above); it does not refresh itself.</p>
+  </div>
+</section>
+
+<section style="padding-top:26px">
+  <div class="wrap">
+    <h2>Newest open bids</h2>
+    <p class="sub" id="showing">Showing 45 of 45, newest first.</p>
+    <div id="list"></div>
+    <p class="warnnote" id="empty" style="display:none">No bids in this snapshot match those filters. Clear a filter or try a broader keyword — the counts above are the whole board, so nothing is hidden behind a sign-up.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="card" style="border:0;padding:6px 0">
+      <h2>Get government RFPs matched to your business, free</h2>
+      <p class="sub">Two fields and you&rsquo;re on your way. This quick form <strong>does not submit or store anything on this page</strong> — clicking Continue simply carries your name and email to the free registration page so you can finish there. No password is asked for here, and suppliers, subcontractors, and skilled professionals register free with no credit card.</p>
+      <form class="quickform" action="register-free.html" method="get">
+        <div>
+          <label for="visitorName">Your name</label>
+          <input id="visitorName" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="visitorEmail">Email</label>
+          <input id="visitorEmail" name="email" type="email" autocomplete="email" required>
+        </div>
+        <button class="btn" type="submit">Continue to free registration &rarr;</button>
+      </form>
+      <p class="small" style="margin-top:12px">Tip from the registration page: alerts arrive most reliably at Gmail or a company address; Outlook and Hotmail sometimes file them as spam.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Want the full board, matched to you?</h2>
+    <p class="sub">This snapshot is the public sample. GovWin OS members work from the live daily SAM.gov feed matched to their company profile — NAICS codes, keywords, set-asides, and the states they work in — with a bid desk, vendor-confirmed quotes, and state and local playbooks for all 50 states, DC, and the territories.</p>
+    <p><a class="btn" href="index.html#plans">See plans &amp; pricing</a> <a class="btn alt" href="register-free.html" style="margin-left:8px">Register your business free</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">GovWin OS</strong> — a service of The Feet Washers, Inc., Lauderdale Lakes, Florida.<br>
+    Contact: <a href="mailto:nipteiapp@gmail.com">nipteiapp@gmail.com</a> · 772-971-6129 · Payments secured by Stripe.<br>
+    Free guides: <a href="guides/sam-gov-registration.html">SAM.gov registration</a> · <a href="guides/find-first-government-contract.html">Find your first contract</a> · <a href="guides/capability-statement.html">Capability statements</a> · <a href="guides/florida-vendor-registration.html">Florida vendor registration</a> · <a href="guides/govwin-vs-govdirections.html">GovWin vs GovDirections</a><br>
+    <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a><br>
+    <span style="color:#8fa8c2">GovWin OS is a private platform that helps businesses find and pursue government opportunities. It is not a government agency and is not affiliated with SAM.gov, Grants.gov, or any government body. Listings on this page are a snapshot dated November 6, 2026 of public SAM.gov notices; confirm every requirement and deadline in the official posting.</span></p>
+  </div>
+</footer>
+
+<script type="application/json" id="snapshot-data">
+[
+  {
+    "title": "Q701--7 Full Time Equivalent Medical Technologists   - Clinical Laboratory Scientists",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Palo Alto",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-16T18:00:00+00:00",
+    "set_aside": "",
+    "external_id": "1e8889e557cc442f970ea295807a37db",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/1e8889e557cc442f970ea295807a37db/view"
+  },
+  {
+    "title": "Q701--7 Full Time Equivalent Medical Technologists   - Clinical Laboratory Scientists",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.261-NETWORK CONTRACT OFFICE 21 (36C261)",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Palo Alto",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-16T18:00:00+00:00",
+    "set_aside": "",
+    "external_id": "cc96953a2c544b5aae32bbe732b3a0f7",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/cc96953a2c544b5aae32bbe732b3a0f7/view"
+  },
+  {
+    "title": "Janitorial Services on the Homochitto Ranger District, MS",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA-FS, CSA EAST 2",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Meadville",
+    "place_state": "MS",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-12T14:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "00c5dd423425455caa5222c1b215f7b9",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/00c5dd423425455caa5222c1b215f7b9/view"
+  },
+  {
+    "title": "Janitorial services- Pagsoa Ranger District",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA FS SAN JUAN NATIONAL FOREST",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Pagosa Springs",
+    "place_state": "CO",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-19T17:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "1d1b8d72c87844289d3efb4990073ded",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/1d1b8d72c87844289d3efb4990073ded/view"
+  },
+  {
+    "title": "S201--Aseptic Janitorial/or Custodial Services WRJ  White River J",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-12-01T18:00:00+00:00",
+    "set_aside": null,
+    "external_id": "257f9c3bf02e4a419694e718a686cac1",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/257f9c3bf02e4a419694e718a686cac1/view"
+  },
+  {
+    "title": "S--BGNDRF CUSTODIAL SERVICES",
+    "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-18T18:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "26588cc4421447199018d9bbd6789cf4",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/26588cc4421447199018d9bbd6789cf4/view"
+  },
+  {
+    "title": "Custodial Services at Aviano Air Base, Italy",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCES IN EUROPE.FA5682 31 CONS (UNIT 6102)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Aviano",
+    "place_state": "IT-PN",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-12-14T12:00:00+00:00",
+    "set_aside": null,
+    "external_id": "270e2f6d8f2840b9b1b7da8c4f590381",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/270e2f6d8f2840b9b1b7da8c4f590381/view"
+  },
+  {
+    "title": "JANITORIAL SERVICE - Kentucky Area",
+    "agency": "AGRICULTURE, DEPARTMENT OF.ANIMAL AND PLANT HEALTH INSPECTION SERVICE.MRPBS MINNEAPOLIS MN",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Frankfort",
+    "place_state": "KY",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-09T19:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "d53b4c82b5de4084a87589cf40232fbe",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/d53b4c82b5de4084a87589cf40232fbe/view"
+  },
+  {
+    "title": "Janitorial Service - Las Vegas, New Mexico",
+    "agency": "HOMELAND SECURITY, DEPARTMENT OF.FEDERAL EMERGENCY MANAGEMENT AGENCY.REGION 7: EMERGENCY PREPAREDNESS AN",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Las Vegas",
+    "place_state": "NM",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-12T15:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "65b82978d65a495b8834d108ce0e347d",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/65b82978d65a495b8834d108ce0e347d/view"
+  },
+  {
+    "title": "Janitorial Services Needed for the Eleven Point Ranger District- Mark Twain N.F.",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA-FS, CSA EAST 6",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Doniphan",
+    "place_state": "MO",
+    "place_country": "US",
+    "posted_at": "2026-11-05",
+    "deadline_at": "2026-11-13T15:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "4c022b2d855042b19d7da16523a179f7",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/4c022b2d855042b19d7da16523a179f7/view"
+  },
+  {
+    "title": "NPSC for Four (4) ICU RNs for the Northern Navajo Medical Center",
+    "agency": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.NAVAJO AREA INDIAN HEALTH SVC",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Shiprock",
+    "place_state": "NM",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-19T18:00:00+00:00",
+    "set_aside": null,
+    "external_id": "14b3df8e8b9a4e21a1a20dc6f6cd80c0",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/14b3df8e8b9a4e21a1a20dc6f6cd80c0/view"
+  },
+  {
+    "title": "Q501--Anesthesiology Staffing Services",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.248-NETWORK CONTRACT OFFICE 8 (36C248)",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Bay Pines",
+    "place_state": "FL",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-11T21:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "535b7d36a3bb4b8c8beb797e81ac451b",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/535b7d36a3bb4b8c8beb797e81ac451b/view"
+  },
+  {
+    "title": "Grounds maintenance services for Riverside National Cemetery. -- S208",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": "Riverside",
+    "place_state": "CA",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-13T01:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "40bd76c19d514efd97b2f6c9c2787843",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/40bd76c19d514efd97b2f6c9c2787843/view"
+  },
+  {
+    "title": "S218--Snow and Ice Service Removal Agreement",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.246-NETWORK CONTRACTING OFFICE 6 (36C246)",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-12T13:00:00+00:00",
+    "set_aside": null,
+    "external_id": "63b1aec59e80464a95bb6b30f4e52cb0",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/63b1aec59e80464a95bb6b30f4e52cb0/view"
+  },
+  {
+    "title": "USAFA Rangeland Noxious Weed Control",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.U.S. AIR FORCE ACADEMY.FA7000  10 CONS LGC",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": "0",
+    "place_state": "CO",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-18T21:00:00+00:00",
+    "set_aside": "No Set aside used",
+    "external_id": "a0425fc603664d05a403cb9d9703551e",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/a0425fc603664d05a403cb9d9703551e/view"
+  },
+  {
+    "title": "Ballfield Maintenance",
+    "agency": "HOMELAND SECURITY, DEPARTMENT OF.US COAST GUARD.USCG ACADEMY",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": "New London",
+    "place_state": "CT",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-18T13:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "e4ad4e7f736d4e9f9a77bfdfe835fcdd",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/e4ad4e7f736d4e9f9a77bfdfe835fcdd/view"
+  },
+  {
+    "title": "Custodial Services",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-DUGWAY PROV GRD",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Dugway",
+    "place_state": "UT",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-12-01T21:00:00+00:00",
+    "set_aside": "8(a) Set-Aside (FAR 19.8)",
+    "external_id": "8a3c247f801e40bda623b7c12e69f7c9",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/8a3c247f801e40bda623b7c12e69f7c9/view"
+  },
+  {
+    "title": "S201--SEMI-ANNUAL WINDOW CLEANING",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.262-NETWORK CONTRACT OFFICE 22 (36C262)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "San Diego",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-09T17:00:00+00:00",
+    "set_aside": "",
+    "external_id": "90f1663ef4024b3891807fd5063cb3ae",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/90f1663ef4024b3891807fd5063cb3ae/view"
+  },
+  {
+    "title": "S201--36C24127Q0017 Windows Washing Service Amendment 0001",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.241-NETWORK CONTRACT OFFICE 01 (36C241)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Bedford",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-27T21:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "e0ea83b588f74b11a92463e49de4c21c",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/e0ea83b588f74b11a92463e49de4c21c/view"
+  },
+  {
+    "title": "Fort Bliss Custodial Service Contract ",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.MISSION INSTALLATION CONTRACTING COMMAND.418TH CSB.W6QM MICC-FT BLISS",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Fort Bliss",
+    "place_state": "TX",
+    "place_country": "US",
+    "posted_at": "2026-11-04",
+    "deadline_at": "2026-11-09T22:00:00+00:00",
+    "set_aside": "8(a) Set-Aside (FAR 19.8)",
+    "external_id": "facb8373363547f1ae1ba379e7800235",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/facb8373363547f1ae1ba379e7800235/view"
+  },
+  {
+    "title": "CERFP CTE  (DECEMBER 2026)",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO AL.USPFO AL PROCUREMENT.W7MT USPFO ACTIVITY AL ARNG",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Alexandria",
+    "place_state": "AL",
+    "place_country": "US",
+    "posted_at": "2026-11-03",
+    "deadline_at": "2026-11-13T22:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "4dbcadcdcb8a4848a2c1f99d0f04edac",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/4dbcadcdcb8a4848a2c1f99d0f04edac/view"
+  },
+  {
+    "title": "Powerline Tree Clearing and Dead Tree Felling Services",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION SOUTHWESTERN.ENDIST TULSA.W076 ENDIST TULSA",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-03",
+    "deadline_at": "2026-11-20T20:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "48d66e2a729f40078d1c73ef3d02847c",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/48d66e2a729f40078d1c73ef3d02847c/view"
+  },
+  {
+    "title": "Herbicide Application Services - Raystown Lake Project",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.US ARMY CORPS OF ENGINEERS.ENGINEER DIVISION NORTH ATLANTIC.ENDIST BALTIMORE.W2SD ENDIST BALTIMORE",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-03",
+    "deadline_at": "2026-11-18T17:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "5b462fbcde4c4c3994310dd438b06157",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/5b462fbcde4c4c3994310dd438b06157/view"
+  },
+  {
+    "title": "Gardening services for The US embassy in Bogotá, Colombia",
+    "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY BOGOTA",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": "Bogota",
+    "place_state": "CO-DC",
+    "place_country": "US",
+    "posted_at": "2026-11-03",
+    "deadline_at": "2026-11-12T21:00:00+00:00",
+    "set_aside": "No Set aside used",
+    "external_id": "9757ef124bc6405bb0345e4765c52e6d",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/9757ef124bc6405bb0345e4765c52e6d/view"
+  },
+  {
+    "title": "SO Pine Ridge Janitorial",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.Nebraska National Forest",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Chadron",
+    "place_state": "SD",
+    "place_country": "US",
+    "posted_at": "2026-11-03",
+    "deadline_at": "2026-11-13T23:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "a0803a7691554061af9299d71844b1d1",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/a0803a7691554061af9299d71844b1d1/view"
+  },
+  {
+    "title": "ISBEE Set-Aside: FFP Commercial Non-Personal Healthcare Services – Two (2) APP (PA/NP) Full-Time Equivalent Positions, Rosebud Service Unit, Rosebud IHS Hospital, Rosebud, SD",
+    "agency": "HEALTH AND HUMAN SERVICES, DEPARTMENT OF.INDIAN HEALTH SERVICE.GREAT PLAINS AREA INDIAN HEALTH SVC",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Rosebud",
+    "place_state": "SD",
+    "place_country": "US",
+    "posted_at": "2026-11-02",
+    "deadline_at": "2026-11-30T18:00:00+00:00",
+    "set_aside": "Indian Small Business Economic Enterprise",
+    "external_id": "3f35ed7bd3404ee896c0894ea8158276",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/3f35ed7bd3404ee896c0894ea8158276/view"
+  },
+  {
+    "title": "S218--RFI New Snow & Ice Removal - CI",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NETWORK CONTRACT OFFICE 23 (36C263)",
+    "naics_code": "561730",
+    "naics_label": "Landscaping Services (NAICS 561730)",
+    "place_city": "Des Moines",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-11-02",
+    "deadline_at": "2026-11-09T17:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "f1b4b01a70d14f29bd05fbaf92bc9466",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/f1b4b01a70d14f29bd05fbaf92bc9466/view"
+  },
+  {
+    "title": "S201--Janitorial Services for Richmond National Cemetery  & Satellite Cemeteries",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CEMETERY ADMIN (36C786)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Richmond",
+    "place_state": "VA",
+    "place_country": "US",
+    "posted_at": "2026-11-02",
+    "deadline_at": "2026-11-23T21:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "cfaa487bb559493ca4296f14dd6b89ac",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/cfaa487bb559493ca4296f14dd6b89ac/view"
+  },
+  {
+    "title": "R425--Sources Sought:  Electrical/Mechanical Techician Support  Chelmsford-761",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.NATIONAL CMOP OFFICE (36C770)",
+    "naics_code": "561320",
+    "naics_label": "Temporary Help Services (NAICS 561320)",
+    "place_city": "Chelmsford",
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-30",
+    "deadline_at": "2026-11-17T20:00:00+00:00",
+    "set_aside": "",
+    "external_id": "7d721d20d79142858be4ddd63b153fb8",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/7d721d20d79142858be4ddd63b153fb8/view"
+  },
+  {
+    "title": "Janitorial Services for the Blackduck Ranger District on the Chippewa National Forest",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA-FS, CSA EAST 7",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Blackduck",
+    "place_state": "MN",
+    "place_country": "US",
+    "posted_at": "2026-10-30",
+    "deadline_at": "2026-11-16T23:00:00+00:00",
+    "set_aside": null,
+    "external_id": "a5ce73817796471f9350afc9667bffd4",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/a5ce73817796471f9350afc9667bffd4/view"
+  },
+  {
+    "title": "SOURCES SOUGHT NOTICE FOR SECURED JANITORIAL SERVICES AT MARINE CORPS BASE (MCB) QUANTICO, VA",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC WASHINGTON.NAVFACSYSCOM WASHINGTON",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Quantico",
+    "place_state": "VA",
+    "place_country": "US",
+    "posted_at": "2026-10-30",
+    "deadline_at": "2026-11-20T19:00:00+00:00",
+    "set_aside": "8(a) Set-Aside (FAR 19.8)",
+    "external_id": "f7501dc4741b447f86ee3e27c3a718de",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/f7501dc4741b447f86ee3e27c3a718de/view"
+  },
+  {
+    "title": "Window Cleaning and Maintenance",
+    "agency": "JUSTICE, DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION.FBI-JEH",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Clarksburg",
+    "place_state": "WV",
+    "place_country": "US",
+    "posted_at": "2026-10-29",
+    "deadline_at": "2026-11-24T15:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "e11dc80cc2494d43813ebb13c58e50b6",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/e11dc80cc2494d43813ebb13c58e50b6/view"
+  },
+  {
+    "title": "Market Survey for Janitorial Services at FAA Facilities in King Salmon, Alaska",
+    "agency": "TRANSPORTATION, DEPARTMENT OF.FEDERAL AVIATION ADMINISTRATION.697DCK REGIONAL ACQUISITIONS SVCS",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "King Salmon",
+    "place_state": "AK",
+    "place_country": "US",
+    "posted_at": "2026-10-28",
+    "deadline_at": "2026-12-01T00:00:00+00:00",
+    "set_aside": null,
+    "external_id": "907fa7b41fea4549a49a3624212beaf7",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/907fa7b41fea4549a49a3624212beaf7/view"
+  },
+  {
+    "title": "Custodial Services at Commander Fleet Activities, Sasebo (CFAS), Japan. ",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC PACIFIC CMD.NAVFAC FAR EAST.NAVFACSYSCOM FAR EAST",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-28",
+    "deadline_at": "2026-12-01T01:00:00+00:00",
+    "set_aside": null,
+    "external_id": "bb6dcd005e7f4d819f21e615b1320a83",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/bb6dcd005e7f4d819f21e615b1320a83/view"
+  },
+  {
+    "title": "Department of War Education Activity (DoWEA) Pacific West Region, in Camp Humphreys, Osan AB and Daegu",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.AMC.ACC.ACC-OO.411TH CSB.0411 AQ HQ     CONTRACT AUG",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-27",
+    "deadline_at": "2026-11-06T04:00:00+00:00",
+    "set_aside": null,
+    "external_id": "1e9ae0c5e66b42fcb8af0c287d9509ff",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/1e9ae0c5e66b42fcb8af0c287d9509ff/view"
+  },
+  {
+    "title": "S--Estes Janitorial Service",
+    "agency": "INTERIOR, DEPARTMENT OF THE.DEPARTMENTAL OFFICES.RECLAMATION CONTRACTING ACTIVITY",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-27",
+    "deadline_at": "2026-11-10T22:00:00+00:00",
+    "set_aside": "",
+    "external_id": "7b9acd467e25498bbd5add36c25f76da",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/7b9acd467e25498bbd5add36c25f76da/view"
+  },
+  {
+    "title": "SOURCES SOUGHT: N40080-27-R-XXXX 8(a) BASEWIDE JANITORIAL SERVICES FOR MARINE CORPS BASE (MCB) QUANTICO, VIRGINIA",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE NAVY.NAVFAC.NAVFAC ATLANTIC CMD.NAVFAC WASHINGTON.NAVFACSYSCOM WASHINGTON",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Quantico",
+    "place_state": "VA",
+    "place_country": "US",
+    "posted_at": "2026-10-27",
+    "deadline_at": "2026-11-16T19:00:00+00:00",
+    "set_aside": "8(a) Set-Aside (FAR 19.8)",
+    "external_id": "a2badf39d2574984a80c99ec15091ffc",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/a2badf39d2574984a80c99ec15091ffc/view"
+  },
+  {
+    "title": "Cleaning of MSGR guard and Embassy support staff assigned areas",
+    "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY MADRID",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Madrid",
+    "place_state": "ES-MD",
+    "place_country": "US",
+    "posted_at": "2026-10-26",
+    "deadline_at": "2026-11-10T16:30:00+00:00",
+    "set_aside": "No Set aside used",
+    "external_id": "62fa182d2c5f4fd2a27c6b3f4441f00b",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/62fa182d2c5f4fd2a27c6b3f4441f00b/view"
+  },
+  {
+    "title": "Sources Sought - Methicillin-Resistant Staphylococcus Aureus (MRSA) Sanitation Services",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR EDUCATION AND TRAINING COMMAND.JOINT BASE SAN ANTONIO.FA3016  502 CONS CL",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-26",
+    "deadline_at": "2026-11-06T22:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "a5830950367840568c031809073f5268",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/a5830950367840568c031809073f5268/view"
+  },
+  {
+    "title": "146 DFAC Janitorial Service",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE ARMY.NATIONAL GUARD BUREAU.JFHQ USPFO CA.USPFO CA PROCUREMENT.W7MX USPFO ACTIVITY CAANG 146",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Port Hueneme",
+    "place_state": "CA",
+    "place_country": "US",
+    "posted_at": "2026-10-23",
+    "deadline_at": "2026-11-07T02:00:00+00:00",
+    "set_aside": null,
+    "external_id": "90497777f1f741638a8f31e86f1cad84",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/90497777f1f741638a8f31e86f1cad84/view"
+  },
+  {
+    "title": "Swan Lake Ranger District Janitorial Contract, Flathead National Forest",
+    "agency": "AGRICULTURE, DEPARTMENT OF.FOREST SERVICE.USDA-FS, CSA INTERMOUNTAIN 7",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": "MT",
+    "place_country": "US",
+    "posted_at": "2026-10-23",
+    "deadline_at": "2026-11-12T20:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "b8ccbbe3ee9548bb9ba4f1617224649d",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/b8ccbbe3ee9548bb9ba4f1617224649d/view"
+  },
+  {
+    "title": "CFO JANITORIAL SERVICES (5 YEAR)",
+    "agency": "INTERIOR, DEPARTMENT OF THE.BUREAU OF LAND MANAGEMENT.ELY DISTRICT OFFICE",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": null,
+    "place_state": null,
+    "place_country": "US",
+    "posted_at": "2026-10-22",
+    "deadline_at": "2026-11-16T19:00:00+00:00",
+    "set_aside": "Small Business Set Aside - Total",
+    "external_id": "0602507394964d76986220e4c04c2194",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/0602507394964d76986220e4c04c2194/view"
+  },
+  {
+    "title": "S201--VANIHCS Window Cleaning - Engineering Service  Fort Wayne and Marion Campuses",
+    "agency": "VETERANS AFFAIRS, DEPARTMENT OF.VETERANS AFFAIRS, DEPARTMENT OF.250-NETWORK CONTRACT OFFICE 10 (36C250)",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Fort Wayne",
+    "place_state": "IN",
+    "place_country": "US",
+    "posted_at": "2026-10-20",
+    "deadline_at": "2026-11-19T15:00:00+00:00",
+    "set_aside": "Service-Disabled Veteran-Owned Small Business (SDVOSB) Set-Aside (FAR 19.14)",
+    "external_id": "6908ff7a8ee54ccaa6ab40b0fe6665aa",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/6908ff7a8ee54ccaa6ab40b0fe6665aa/view"
+  },
+  {
+    "title": "GLQ and TDY apartment cleaning services",
+    "agency": "STATE, DEPARTMENT OF.STATE, DEPARTMENT OF.US EMBASSY MADRID",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "Madrid",
+    "place_state": "ES-MD",
+    "place_country": "US",
+    "posted_at": "2026-10-19",
+    "deadline_at": "2026-11-06T16:30:00+00:00",
+    "set_aside": "No Set aside used",
+    "external_id": "4b46b7f586eb477baaafbc317137fd2c",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/4b46b7f586eb477baaafbc317137fd2c/view"
+  },
+  {
+    "title": "EOS Custodial Service",
+    "agency": "DEPT OF DEFENSE.DEPT OF THE AIR FORCE.AIR MOBILITY COMMAND.FA4484  87 CONS PK",
+    "naics_code": "561720",
+    "naics_label": "Janitorial Services (NAICS 561720)",
+    "place_city": "0",
+    "place_state": "NJ",
+    "place_country": "US",
+    "posted_at": "2026-10-15",
+    "deadline_at": "2026-11-16T04:30:00+00:00",
+    "set_aside": "8(a) Set-Aside (FAR 19.8)",
+    "external_id": "05044bcd730f4077a74ba996c13d1eb5",
+    "solicitation_url": "https://sam.gov/workspace/contract/opp/05044bcd730f4077a74ba996c13d1eb5/view"
+  }
+]
+</script>
+<script>
+(function(){
+  var DATA = JSON.parse(document.getElementById('snapshot-data').textContent);
+  var listEl = document.getElementById('list');
+  var showingEl = document.getElementById('showing');
+  var emptyEl = document.getElementById('empty');
+  var qEl = document.getElementById('q');
+  var indEl = document.getElementById('industry');
+  var stateEl = document.getElementById('state');
+
+  function fmtDate(iso){
+    if(!iso) return 'Not stated in feed';
+    var d = new Date(iso.length <= 10 ? iso + 'T12:00:00Z' : iso);
+    if(isNaN(d)) return iso;
+    return d.toLocaleDateString('en-US', {year:'numeric', month:'short', day:'numeric', timeZone:'UTC'});
+  }
+  function locationText(r){
+    var parts = [];
+    if(r.place_city) parts.push(r.place_city);
+    if(r.place_state) parts.push(r.place_state);
+    if(!parts.length) return 'Location not stated in feed';
+    var loc = parts.join(', ');
+    if(r.place_country && r.place_country !== 'US') loc += ' (' + r.place_country + ')';
+    return loc;
+  }
+  function render(){
+    var q = qEl.value.trim().toLowerCase();
+    var ind = indEl.value;
+    var st = stateEl.value;
+    var rows = DATA.filter(function(r){
+      if(ind && r.naics_code !== ind) return false;
+      if(st){
+        if(st === '__none__'){ if(r.place_state) return false; }
+        else if(r.place_state !== st) return false;
+      }
+      if(q){
+        var hay = ((r.title||'') + ' ' + (r.agency||'') + ' ' + (r.naics_label||'') + ' ' + (r.place_city||'') + ' ' + (r.place_state||'')).toLowerCase();
+        if(hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    showingEl.textContent = 'Showing ' + rows.length + ' of ' + DATA.length + ', newest first.';
+    emptyEl.style.display = rows.length ? 'none' : 'block';
+    listEl.textContent = '';
+    rows.forEach(function(r){
+      var card = document.createElement('article'); card.className = 'bid';
+      var top = document.createElement('div'); top.className = 'topline';
+      var cat = document.createElement('span'); cat.className = 'cat'; cat.textContent = r.naics_label || 'Federal opportunity';
+      var lvl = document.createElement('span'); lvl.className = 'level'; lvl.textContent = 'Federal';
+      top.appendChild(cat); top.appendChild(lvl); card.appendChild(top);
+      var h = document.createElement('h3'); h.textContent = r.title || 'Untitled notice'; card.appendChild(h);
+      var agency = document.createElement('p'); agency.className = 'meta'; agency.textContent = r.agency || 'Agency not stated in feed'; card.appendChild(agency);
+      var meta = document.createElement('p'); meta.className = 'meta';
+      meta.textContent = 'Location: ' + locationText(r) + '  ·  Posted: ' + fmtDate(r.posted_at) + '  ·  Response deadline: ' + fmtDate(r.deadline_at);
+      card.appendChild(meta);
+      if(r.set_aside){
+        var sa = document.createElement('p'); var tag = document.createElement('span'); tag.className='tag'; tag.textContent = r.set_aside; sa.appendChild(tag); card.appendChild(sa);
+      }
+      var foot = document.createElement('p'); foot.className = 'meta';
+      if(r.solicitation_url){
+        var a = document.createElement('a'); a.href = r.solicitation_url; a.target='_blank'; a.rel='noopener'; a.textContent = 'View the official posting on SAM.gov →';
+        foot.appendChild(a);
+      }
+      if(r.external_id){
+        var idSpan = document.createElement('span'); idSpan.textContent = (r.solicitation_url ? '  ·  ' : '') + 'SAM.gov Opportunity ID: ' + r.external_id;
+        foot.appendChild(idSpan);
+      }
+      card.appendChild(foot);
+      listEl.appendChild(card);
+    });
+  }
+  document.getElementById('searchBtn').addEventListener('click', render);
+  qEl.addEventListener('input', render);
+  indEl.addEventListener('change', render);
+  stateEl.addEventListener('change', render);
+  document.querySelectorAll('.industry-link').forEach(function(a){
+    a.addEventListener('click', function(){
+      indEl.value = a.getAttribute('data-industry');
+      render();
+    });
+  });
+  render();
+})();
+</script>
+</body>
+</html>

@@ -26,6 +26,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://govwin.niptei.com/bids.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://govwin.niptei.com/register-free.html</loc>
     <lastmod>2026-11-06</lastmod>
     <priority>0.8</priority>
