@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GovWin OS — Government Contract &amp; Grant Platform</title>
+<meta name="description" content="GovWin OS helps small businesses find and win government contracts and grants at county, state, and federal level: live SAM.gov opportunities, nationwide playbooks, a bid desk, vendor-confirmed quotes, and a private dashboard.">
+<style>
+  :root{
+    --navy:#0f2a4a; --navy2:#16395f; --gold:#c9a227; --ink:#1c2733; --mut:#5a6a7a;
+    --bg:#f6f8fa; --card:#ffffff; --line:#dfe6ee; --ok:#0e7a3d;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  a{color:var(--navy2)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header.site{background:var(--navy);color:#fff;position:sticky;top:0;z-index:10}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .brand{font-weight:800;font-size:20px;letter-spacing:.3px;color:#fff;text-decoration:none}
+  .brand span{color:var(--gold)}
+  nav a{color:#dbe6f2;text-decoration:none;margin-left:18px;font-size:15px}
+  nav a:hover{color:#fff}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:64px 0 56px}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 14px}
+  .hero p.lede{font-size:19px;color:#d7e3f0;max-width:760px;margin:0 0 26px}
+  .btn{display:inline-block;background:var(--gold);color:#231a00;font-weight:700;padding:12px 22px;border-radius:8px;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+  .btn:hover{filter:brightness(1.06)}
+  .btn.ghost{background:transparent;color:#fff;border:1px solid #7d97b5}
+  .btn.small{padding:9px 16px;font-size:15px}
+  .btn.alt{background:var(--navy);color:#fff}
+  section{padding:52px 0}
+  h2{font-size:28px;margin:0 0 8px;color:var(--navy)}
+  .sub{color:var(--mut);max-width:760px;margin:0 0 28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+  .card h3{margin:0 0 6px;font-size:19px;color:var(--navy)}
+  .card p{margin:0 0 10px;color:var(--ink)}
+  .card p.small,.small{font-size:13.5px;color:var(--mut)}
+  .price{font-size:32px;font-weight:800;color:var(--navy);margin:6px 0 2px}
+  .price small{font-size:15px;font-weight:600;color:var(--mut)}
+  .pop{border:2px solid var(--gold)}
+  .tag{display:inline-block;background:#fdf3d0;color:#6d5410;font-size:12.5px;font-weight:700;padding:2px 9px;border-radius:99px;margin-bottom:8px}
+  .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  ul.check{list-style:none;padding:0;margin:10px 0 0}
+  ul.check li{padding:5px 0 5px 26px;position:relative}
+  ul.check li::before{content:"—";position:absolute;left:4px;color:var(--gold);font-weight:800}
+  .note{background:#eef4fb;border:1px solid #cfdff2;border-radius:10px;padding:16px 18px;color:#274b73}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;counter-reset:step}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .step b{color:var(--navy)}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px}
+  .faq summary{font-weight:700;cursor:pointer;color:var(--navy)}
+  footer{background:var(--navy);color:#c9d8e8;padding:34px 0;font-size:14.5px}
+  footer a{color:#fff}
+  @media (max-width:640px){.hero h1{font-size:31px} nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">GovWin <span>OS</span></a>
+    <nav>
+      <a href="#platform">Platform</a>
+      <a href="#plans">Plans</a>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1>Win government business at every level — county, state, and federal.</h1>
+    <p class="lede">GovWin OS puts live federal contract opportunities, grant notices, nationwide playbooks for all 50 states and territories, a working bid desk, and vendor-confirmed pricing quotes into one private dashboard built for small businesses.</p>
+    <a class="btn" href="#plans">See plans &amp; pricing</a>
+    <a class="btn ghost" href="#platform" style="margin-left:10px">What you get</a>
+  </div>
+</div>
+
+<section id="platform">
+  <div class="wrap">
+    <h2>One platform for selling to government</h2>
+    <p class="sub">Pick the levels and places you want to sell to. GovWin tailors your checklists, playbooks, and opportunity matches to those markets.</p>
+    <div class="grid2">
+      <div class="card"><h3>Live opportunity queue</h3><p>Real contract opportunities pulled from SAM.gov and matched to your company profile — NAICS codes, keywords, set-asides, and the states you work in.</p></div>
+      <div class="card"><h3>Bid Desk</h3><p>A deadline-first workspace for every deal: fit study, compliance checklist, Q&amp;A deadlines, amendment tracking, and one clear next step at a time.</p></div>
+      <div class="card"><h3>Quote Desk</h3><p>Find wholesale suppliers and exact-service subcontractors, send quote requests, and price from vendor-confirmed quotes only — web prices are leads, never quotes.</p></div>
+      <div class="card"><h3>Levels &amp; Places</h3><p>Step-by-step playbooks for federal, state, county, city, districts &amp; SLED, cooperatives, and tribal &amp; territories — register, certify, find, bid, win, deliver, invoice, get paid.</p></div>
+      <div class="card"><h3>Unison Marketplace lane</h3><p>Track government product Buys, record firm supplier prices, and see your true landed cost — supplier price, delivery, platform fee, and margin — before you bid.</p></div>
+      <div class="card"><h3>Grants</h3><p>Posted federal grants from Grants.gov, tracked alongside your contracts, with state and local grant portals organized state by state.</p></div>
+      <div class="card"><h3>Private dashboard</h3><p>Your own logon and workspace. Your bids, quotes, uploads, and orders are yours alone — verified isolated from every other company on the platform.</p></div>
+      <div class="card"><h3>Win the next one</h3><p>Every closed bid gets a short debrief. GovWin turns losses into fix-it steps, tracks your win rate, and banks wins into your past-performance record.</p></div>
+    </div>
+    <p class="note" style="margin-top:22px"><strong>Straight talk on coverage:</strong> the live data feed is SAM.gov federal opportunities (plus Grants.gov notices). State, county, and city buying is covered through verified portal links, playbooks, and tracked sources for all 50 states and territories — we show you exactly what is live and what is tracked, and we never dress up a link as a feed.</p>
+  </div>
+</section>
+
+<section id="plans" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>Plans</h2>
+    <p class="sub">Flat monthly or yearly pricing. No percentage of any contract you win — ever. Payments are taken securely by Stripe; you can pay by the month or take the year at ten months' price.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Finder</h3>
+        <div class="price">$29<small> /month</small></div>
+        <p class="small">or $290 /year</p>
+        <ul class="check">
+          <li>Live SAM.gov opportunity queue matched to your profile</li>
+          <li>Levels &amp; Places playbooks for your markets</li>
+          <li>Company profile, readiness checklist, My Markets</li>
+          <li>Directory listing for teaming partners</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn small" href="https://buy.stripe.com/aFaeVf8XSfK949N6mO5Ne00" target="_blank" rel="noopener">Pay monthly — $29</a>
+          <a class="btn small alt" href="https://buy.stripe.com/28EdRbeic2Xn8q3bH85Ne01" target="_blank" rel="noopener">Pay yearly — $290</a>
+        </div>
+      </div>
+      <div class="card pop">
+        <span class="tag">Most complete for active bidders</span>
+        <h3>Bidder</h3>
+        <div class="price">$59<small> /month</small></div>
+        <p class="small">or $590 /year</p>
+        <ul class="check">
+          <li>Everything in Finder</li>
+          <li>Bid Desk with fit studies and compliance checklists</li>
+          <li>Quote Desk — supplier and subcontractor finder</li>
+          <li>Past-award research (who won, at what price)</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn small" href="https://buy.stripe.com/9B6aEZ5LGfK9eOr4eG5Ne02" target="_blank" rel="noopener">Pay monthly — $59</a>
+          <a class="btn small alt" href="https://buy.stripe.com/7sYcN7de8eG521FeTk5Ne03" target="_blank" rel="noopener">Pay yearly — $590</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Prime Team</h3>
+        <div class="price">$99<small> /month</small></div>
+        <p class="small">or $990 /year</p>
+        <ul class="check">
+          <li>Everything in Bidder</li>
+          <li>Unison Marketplace buy tracking and landed-cost pricing</li>
+          <li>Grant tracking across federal and state programs</li>
+          <li>Win/loss debriefs, win-rate tracking, past-performance record</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn small" href="https://buy.stripe.com/aFa8wR4HCdC1bCf3aC5Ne04" target="_blank" rel="noopener">Pay monthly — $99</a>
+          <a class="btn small alt" href="https://buy.stripe.com/7sY6oJ2zufK99u726y5Ne05" target="_blank" rel="noopener">Pay yearly — $990</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Done-for-you services</h2>
+    <p class="sub">Two fixed-fee services for the steps most small businesses get stuck on.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>SAM.gov Setup — $399</h3>
+        <p>We walk your SAM.gov registration through with you: entity details, NAICS, reps and certifications, and your GovWin profile matched to it.</p>
+        <p class="small"><strong>Please know:</strong> SAM.gov registration itself is <strong>free</strong> at sam.gov. The $399 is for our setup help only — never for the registration.</p>
+        <div class="btnrow"><a class="btn small" href="https://buy.stripe.com/00w00leiccxX21FbH85Ne06" target="_blank" rel="noopener">Buy SAM.gov Setup — $399</a></div>
+      </div>
+      <div class="card">
+        <h3>501(c)(3) Preparation — $150</h3>
+        <p>Preparation help for your nonprofit's 501(c)(3) application, with the eligibility worksheet first so you file the right form.</p>
+        <p class="small"><strong>Please know:</strong> the IRS filing fee is separate — $275 for Form 1023-EZ or $600 for Form 1023, plus any state fees. This is preparation help only; it is not legal or tax advice and cannot guarantee IRS approval.</p>
+        <div class="btnrow"><a class="btn small" href="https://buy.stripe.com/9B65kF6PK7dD8q39zO5Ne07" target="_blank" rel="noopener">Buy 501(c)(3) Preparation — $150</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Founding members are onboarded personally by our team.</p>
+    <div class="steps">
+      <div class="step"><p><b>1. Pick your plan and pay in Stripe.</b><br>Checkout is handled entirely by Stripe — we never see or store your card.</p></div>
+      <div class="step"><p><b>2. We open your private workspace.</b><br>Using the same email you paid with, we set up your company workspace and confirm your plan — usually within one business day — and send your sign-in details.</p></div>
+      <div class="step"><p><b>3. Work deals from your dashboard.</b><br>Your Home dashboard shows today's deadlines, your pipeline with its next steps, new matches, your readiness score, and your money — quotes out, confirmed totals, and orders.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <p class="sub"></p>
+    <details><summary>Is SAM.gov registration really free?</summary><p>Yes. Registering your entity on SAM.gov costs nothing at <a href="https://sam.gov" target="_blank" rel="noopener">sam.gov</a>. Our $399 service is paid help with the setup — only buy it if you want the help.</p></details>
+    <details><summary>Do you take a percentage when I win a contract?</summary><p>Never. GovWin charges flat plan and service fees only. No contingent percentage of any contract — that is a hard rule on this platform.</p></details>
+    <details><summary>Which levels of government does GovWin cover?</summary><p>Federal (live SAM.gov feed), plus state, county, city, school and special districts, cooperatives, and tribal &amp; territories through playbooks, verified portal links, and tracked sources for all 50 states, DC, and the U.S. territories.</p></details>
+    <details><summary>Is my company's information private?</summary><p>Yes. Every company gets its own logon and workspace, and workspaces are isolated — your bids, quotes, uploads, and orders are not visible to other companies. Isolation was verified by direct cross-account testing.</p></details>
+    <details><summary>Can I cancel a plan?</summary><p>Yes — plans are managed through Stripe. Contact us at <a href="mailto:thefeetwashers@gmail.com">thefeetwashers@gmail.com</a> and we will take care of it.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">GovWin OS</strong> — a service of The Feet Washers, Inc., Lauderdale Lakes, Florida.<br>
+    Contact: <a href="mailto:thefeetwashers@gmail.com">thefeetwashers@gmail.com</a> · 772-971-6129 · Payments secured by Stripe.<br>
+    <span style="color:#8fa8c2">GovWin OS is a private platform that helps businesses find and pursue government opportunities. It is not a government agency and is not affiliated with SAM.gov, Grants.gov, or any government body.</span></p>
+  </div>
+</footer>
+
+</body>
+</html>
